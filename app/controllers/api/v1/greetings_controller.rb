@@ -3,7 +3,7 @@ class Api::V1::GreetingsController < ApplicationController
 
   # GET /greetings
   def index
-    @greetings = Greeting.all
+    @greetings = Greeting.random_message
 
     render json: @greetings
   end
